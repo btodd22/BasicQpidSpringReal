@@ -1,0 +1,69 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.example.configuration.JMSProperties",
+      "name": "spring.diamd.qpid",
+      "type": "com.example.configuration.JMSProperties"
+    },
+    {
+      "sourceType": "com.example.configuration.JMSProperties",
+      "name": "spring.diamd.qpid.deserialization-policy",
+      "sourceMethod": "getDeserializationPolicy()",
+      "type": "com.example.configuration.JMSProperties$DeserializationPolicy"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.example.configuration.JMSProperties",
+      "name": "spring.diamd.qpid.client-id",
+      "description": "JMS clientID to use for connections. A clientID can only be used by one Connection at a time, so setting it\n will restrict the ConnectionFactory to creating a single open Connection at a time.",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.example.configuration.JMSProperties$DeserializationPolicy",
+      "name": "spring.diamd.qpid.deserialization-policy.black-list",
+      "description": "Blacklist of classes or packages. Blacklist overrides the whitelist, entries that could match both are\n counted as blacklisted.",
+      "type": "java.util.List<java.lang.String>"
+    },
+    {
+      "sourceType": "com.example.configuration.JMSProperties$DeserializationPolicy",
+      "name": "spring.diamd.qpid.deserialization-policy.white-list",
+      "description": "Whitelist of classes or packages.",
+      "type": "java.util.List<java.lang.String>"
+    },
+    {
+      "sourceType": "com.example.configuration.JMSProperties",
+      "name": "spring.diamd.qpid.password",
+      "description": "Login password of the AMQP broker.",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.example.configuration.JMSProperties",
+      "defaultValue": false,
+      "name": "spring.diamd.qpid.receive-local-only",
+      "description": "Whether the client only checks its local message buffer when using receive calls with a timeout.",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "com.example.configuration.JMSProperties",
+      "defaultValue": false,
+      "name": "spring.diamd.qpid.receive-no-wait-local-only",
+      "description": "Whether the client only checks its local message buffer when using receiveNoWait calls.",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "com.example.configuration.JMSProperties",
+      "defaultValue": "amqp:\/\/localhost:5672",
+      "name": "spring.diamd.qpid.remote-url",
+      "description": "The URL of the remote peer the AMQP client should connect to.",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.example.configuration.JMSProperties",
+      "name": "spring.diamd.qpid.username",
+      "description": "AMQP broker username.",
+      "type": "java.lang.String"
+    }
+  ]
+}
